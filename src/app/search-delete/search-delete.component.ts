@@ -9,6 +9,7 @@ import {UserRegistrationService} from '../user-registration.service';
 export class SearchDeleteComponent implements OnInit {
 
   users: any;
+  email: string;
   constructor(private service: UserRegistrationService) { }
 
   public deleteUser(id: number) {

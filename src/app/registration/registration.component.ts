@@ -18,8 +18,7 @@ export class RegistrationComponent implements OnInit {
   }
 
   public registerNow() {
-   const resp = this.service.doRegistration(this.user);
-   console.log(this.user);
+   let resp = this.service.doRegistration(this.user);
    resp.subscribe((data) => this.message = data);
   }
 
